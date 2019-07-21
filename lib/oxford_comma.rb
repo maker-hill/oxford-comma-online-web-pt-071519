@@ -10,7 +10,7 @@ def oxford_comma(array)
     
   elsif array.length >= 3
     
-    array.push("and #{array.last} ")
+    array.push("and #{array.last}")
     array.delete_at(-2)
     array.join(", ")
 end

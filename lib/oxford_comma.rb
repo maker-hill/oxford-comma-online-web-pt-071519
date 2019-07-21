@@ -8,7 +8,10 @@ def oxford_comma(array)
   elsif array.length == 3
     array.join(", ").insert(13, " and")
     
-  else
-    array.to_s
-
+  elsif array.length >= 3
+    
+    array.push("and #{array.last}")
+    array.delete_at(-2)
+    array.join(", ")
+end
 end

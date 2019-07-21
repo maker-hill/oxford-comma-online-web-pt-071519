@@ -10,7 +10,7 @@ def oxford_comma(array)
     
   elsif array.length >= 3
     array.pop
-    array.insert(4,"and dragon fruits")
+    array.push("and ")
     array.join(", ")
 end
 end
